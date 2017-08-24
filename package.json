@@ -1,0 +1,23 @@
+{
+  "name": "bites",
+  "version": "0.0.0",
+  "description": "Another something",
+  "scripts": {
+    "start": "node lib/index.js",
+    "start:browser": "node lib/browser/index.js",
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.2",
+    "@types/fs-extra": "^4.0.0",
+    "@types/node": "^8.0.24",
+    "tslint": "^5.6.0",
+    "tslint-config-standard": "^6.0.1",
+    "typescript": "next"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "fs-extra": "^4.0.1",
+    "puppeteer": "^0.9.0"
+  }
+}
