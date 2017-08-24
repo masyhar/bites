@@ -9,5 +9,10 @@ import Engine from './engine'
   const browser = await engine.browser()
 
   const page = await browser.newPage()
+  page.setViewport({
+    width: 1366,
+    height: 768
+  })
+
   await page.goto('https://tokopedia.com/')
 })()
