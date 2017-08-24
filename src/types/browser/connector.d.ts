@@ -4,6 +4,6 @@ export interface IConfig {
   url: string
 }
 
-export interface IEngine {
+export interface IBrowserConnector {
   browser(): Promise<Browser>
 }
