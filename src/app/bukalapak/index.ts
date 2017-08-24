@@ -4,15 +4,15 @@ import Scrapper from '../../scrapper'
 import { IScrapperChild, IScrapperConfig  } from '../../types/scrapper'
 
 /**
- * Tokopedia Scrapper
+ * Bukalapak Scrapper
  */
-class Tokopedia extends Scrapper implements IScrapperChild {
+class Bukalapak extends Scrapper implements IScrapperChild {
   constructor () {
     const config: IScrapperConfig = {
-      loginURL: 'https://tokopedia.com/login.pl'
+      loginURL: 'https://www.bukalapak.com/login'
     }
     super(config)
   }
 }
 
-export default Tokopedia
+export default Bukalapak
