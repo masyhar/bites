@@ -1,9 +1,9 @@
 import * as Puppeteer from 'puppeteer'
 
 import BrowserConnector from '../browser/connector'
-import { IScrapperConfig } from '../types/scrapper'
+import { IScrapper, IScrapperConfig } from '../types/scrapper'
 
-class Scrapper {
+class Scrapper implements IScrapper {
   public config: IScrapperConfig
 
   constructor (config: IScrapperConfig) {
