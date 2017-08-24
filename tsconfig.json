@@ -6,6 +6,8 @@
       "dom",
       "es6"
     ],
+    "noUnusedLocals": true,
+    "declaration": true,
     "sourceMap": true,
     "outDir": "./lib",
     "rootDir": "./src",

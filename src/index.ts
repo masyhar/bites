@@ -2,11 +2,11 @@
  * Copyright Masyhar 2017 - present
  */
 
-import Engine from './engine'
+import Connector from './browser/connector'
 
 (async function () {
-  const engine = await new Engine()
-  const browser = await engine.browser()
+  const connector = await new Connector()
+  const browser = await connector.browser()
 
   const page = await browser.newPage()
   page.setViewport({
