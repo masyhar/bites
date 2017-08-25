@@ -2,7 +2,7 @@
  * Copyright Masyhar 2017 - present
  */
 
-import Tokopedia from './app/tokopedia'
+import Tokopedia from './app/shopee'
 
 (async function () {
   const tokopedia = await new Tokopedia()

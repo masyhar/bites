@@ -15,7 +15,8 @@ class Scrapper implements IScrapper {
     const page = await browser.newPage()
 
     await page.goto(this.config.loginURL)
-    return page
+
+    return await page
   }
 
   protected async browser (): Promise<Puppeteer.Browser> {

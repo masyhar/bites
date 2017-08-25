@@ -1,5 +1,6 @@
 import path = require('path')
 
 export default {
-  lockPath: path.resolve(__dirname, '../../lock.json')
+  lockPath: path.resolve(__dirname, '../../lock.json'),
+  remoteDebuggingPort: 9222
 }
