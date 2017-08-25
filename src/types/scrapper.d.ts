@@ -52,6 +52,6 @@ export interface IScrapper {
   /**
    * Function to open login page from target scrapping.
    */
-  openLoginPage (): Promise<Page>
+  login (): Promise<Page>
 
 }

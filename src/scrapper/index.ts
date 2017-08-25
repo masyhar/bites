@@ -10,7 +10,7 @@ class Scrapper implements IScrapper {
     this.config = Object.assign({}, this.config, config)
   }
 
-  public async openLoginPage (): Promise<Puppeteer.Page> {
+  public async login (): Promise<Puppeteer.Page> {
     const browser = await this.browser()
     const page = await browser.newPage()
 
