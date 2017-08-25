@@ -10,13 +10,6 @@ class Scrapper implements IScrapper {
     this.config = Object.assign({}, this.config, config)
   }
 
-  protected async browser (): Promise<Puppeteer.Browser> {
-    const connector = await new BrowserConnector()
-    const browser = await connector.browser()
-
-    return browser
-  }
-
   public async openLoginPage (): Promise<Puppeteer.Page> {
     const browser = await this.browser()
     const page = await browser.newPage()
@@ -24,6 +17,14 @@ class Scrapper implements IScrapper {
     await page.goto(this.config.loginURL)
     return page
   }
+
+  protected async browser (): Promise<Puppeteer.Browser> {
+    const connector = await new BrowserConnector()
+    const browser = await connector.browser()
+
+    return browser
+  }
+
 }
 
 export default Scrapper

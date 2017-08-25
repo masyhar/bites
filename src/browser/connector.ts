@@ -1,7 +1,7 @@
 import * as Puppeteer from 'puppeteer'
 
 import { readLock } from '../locker'
-import { IBrowserConnector, IConfig } from '../types/browser/connector'
+import { IBrowserConnector } from '../types/browser/connector'
 
 /**
  * Browser Connector
